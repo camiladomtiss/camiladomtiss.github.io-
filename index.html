@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilosporfolio.css">
+        <script src="Funciones.js"></script>
+    <title>CamilaDominguezPorfolio</title>
+</head>
+<body>
+
+<!-- Cabecera Foto + nombre -->
+
+        <div class="minombre"> 
+            <img src="FotoPerfil.png" class="Perfilfoto" alt="FotoPerfil">
+                    <h2> Camila Dominguez</h2>  
+        </div>
+
+<!-- Presentacion -->
+
+        <div class="saludo">       
+                 <p> ¡Hola a Todos! Soy Camila, una entusiasta de las artes visuales. Con 27 años, 
+                he construido mi camino en la educación como docente en comunicación, explorando cómo podemos conectar 
+                y expresarnos mejor a través de las palabras y las imágenes. Mi viaje en las artes visuales ha sido personal 
+                y creativo. Desde la pintura hasta la ilustración y el dibujo, cada pieza que creo es una exploración 
+                de mi mundo interior y de las historias que puedo contar visualmente.</p>
+                
+                <p>Recientemente, me volví estudiante de programación en el curso 
+                <a href="https://jovenesaprogramar.edu.uy/">"Joven a programar"</a>. Esta experiencia no solo amplía mis horizontes profesionales, sino que también me desafía 
+                a pensar de manera lógica y creativa, combinando mis habilidades artísticas con la tecnología.</p>
+                
+                <p>En este portfolio, los invito a explorar mis trabajos en pintura, ilustración, y dibujo. 
+                Cada pieza es un esfuerzo en si misma y espero que disfruten descubriendo mi proceso creativo 
+                tanto como yo disfruto creándolo.</p>
+                
+                <p id="bienvenida">¡Bienvenidos!</p>
+        </div> 
+
+<!-- Botonera -->
+
+        <br>
+        
+        <div class="botonera"> 
+        <a href="#formacion" class="boton">Formación</a>
+        <a href="#galeria" class="boton">Galería</a>
+        <a href="#contacto" class="boton">Contactos</a>        
+        </div>
+
+        <br>
+
+<!-- Informacion mia -->
+
+    <hr>
+    <div class="titulos">
+            <h1>Mas sobre mí:</h1>
+    </div>
+
+
+    <div id="info">
+
+                <br>
+            <div id="formacion">
+
+                <div class="bloque-info">
+                    <h2>Formación académica</h2>
+                        <ul>
+                            <li>Liceo 18 de Mayo, ciclo basico (2011-2013)</li>
+                            <li>Bachillerato, derecho (2014-2016)</li>
+                            <li>Instituto de Profesores Artigas (2018-2023)</li>
+                            <li> Graduada en Prof. de Comu.Visual (2024)</li>
+                        </ul>
+                </div>
+
+                        <div class="bloque-info">
+                    <h2>Experiencia laboral</h2>
+                        <ul>
+                            <li>Liceo 20 Joaquín Torres García (2019)</li>
+                            <li>Liceo 50 Jorge Chebataroff (2020)</li>
+                            <li>Liceo 44 Melilla (2021)</li>
+                            <li>Liceo 60 Victor Cayota (2024)</li>
+                            <li>Areas Pedagogicas Vista Linda (Actualmente)</li>
+                        </ul>
+                </div>
+
+
+                        <div class="bloque-info">
+                    <h2>¿Qué puedo hacer?</h2>
+                        <ul>
+                            <li>Boceto a lápiz</li>
+                            <li>Acuarela</li>
+                            <li>Pintura acrílica</li>
+                            <li>Collage</li>
+                            <li> Ilustración digital</li>
+                            <li>Escultura en Arcilla/Porcelana</li>
+
+                        </ul>
+                     </div>
+            </div>
+     </div>
+
+    <hr>
+
+<!-- Galeria de imagenes -->
+
+         <div class="titulos">
+            <h1>Galeria</h1>
+            <p>Aquí pueden visualizar algunas de mis obras personales; espero que sean de su agrado. </p>
+        </div>
+
+    <section class="galeria" id="galeria">
+
+        <button class="prev">&#10094;</button>
+            <div class="slider">
+                <img src="img/img-gal-1.png" alt="Obra 1">
+                <img src="img/img-gal-2.png" alt="Obra 2">
+                <img src="img/img-gal-3.png" alt="Obra 3">
+                <img src="img/img-gal-4.png" alt="Obra 4">
+                <img src="img/img-gal-5.png" alt="Obra 5">
+                <img src="img/img-gal-6.png" alt="Obra 6">
+                <img src="img/img-gal-7.png" alt="Obra 7">
+                <img src="img/img-gal-8.png" alt="Obra 8">
+            </div>
+        <button class="next">&#10095;</button>
+            
+    </section>
+
+<!-- Ampliador de imagenes -->
+
+    <div id="lightbox" class="lightbox hidden">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+<hr>
+<br>
+
+<!-- Contactos -->
+
+<div class="titulos" id="contacto">
+  <h1>Contacto</h1>
+  <p>¿Te gustaría hacerme una consulta o simplemente decir hola? ¡Escribime!</p>
+  <a href="mailto:@gmail.com" class="boton-contacto">Mi correo electronico</a>
+</div>
+
+
+</body>
+
+</html>

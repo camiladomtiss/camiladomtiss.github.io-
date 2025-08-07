@@ -1,0 +1,220 @@
+/* General */
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(91, 99, 164);
+  color: rgb(13, 16, 36);
+ 
+   
+}
+
+/* Imagen de perfil */
+
+.Perfilfoto {
+  width: 200px;
+  height: 200px;
+  border-radius: 15%;
+}
+
+.minombre {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+
+  h2 {
+        font-size:300%;
+        color: aliceblue;
+}
+}
+
+
+/* Secciones de texto */ 
+
+.saludo {
+  background-color: rgb(172, 176, 205);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: -2%;
+}
+
+/* Botones de navegación */
+
+.boton {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 30px 90px;
+  background-color: rgb(223, 195, 220);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: larger;
+}
+
+.boton:hover {
+ background-color: rgb(177, 128, 172);
+}
+
+.botonera {
+    display: flex
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* Formación */
+
+#info {
+        background-color: rgb(172, 176, 205);
+        border-radius: 10px;
+        padding: 2%;
+}
+
+#formacion {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bloque-info {
+  background-color: rgb(223, 195, 220);
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 280px;
+  box-sizing: border-box;
+  h2 {
+        text-align: center;
+  }
+
+}
+      ul {
+        padding-left: 20px;
+        }
+
+        h2 {
+        margin-top: 0;
+      }
+
+
+/* Galería */
+
+.galeria {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+}
+
+
+.slider img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.10);
+  opacity: 0.60;
+}
+
+
+/* Botones de la galeria */
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00000088;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background: #000000cc;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* Imagen ampliada */
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Contacto */
+
+div.titulos {
+        color: aliceblue;
+}
+
+.boton-contacto {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: rgb(223, 195, 220);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.boton-contacto:hover {
+  background-color: #5e35b1;
+  transform: scale(1.05);
+}
